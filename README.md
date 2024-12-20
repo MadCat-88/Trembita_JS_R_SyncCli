@@ -43,7 +43,7 @@
 1. Клонуйте репозиторій:
 
   ```bash
-  git clone https://github.com/roman-lakhnov/rest-sync-client-next-js-page-router.git
+  git clone https://github.com/kshypachov/rest-sync-client-next-js-page-router.git
   ```
 
 2.Перейдіть в директорію проєкту:
@@ -123,7 +123,6 @@ LOG_LEVEL='debug' # Рівень логування (info, debug, error і т.д
 LOG_DIRECTORY='./logs' # Директорія для збереження лог-файлів
 ERROR_LOG_FILE_NAME='error.log' # Назва файлу для збереження логів помилок
 COMBINED_LOG_FILE_NAME='combined.log' # Назва файлу для збереження об'єднаних логів
-
 ```
 
 ## Структура проєкту
