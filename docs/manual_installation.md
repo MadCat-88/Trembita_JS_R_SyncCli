@@ -18,7 +18,7 @@
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash - 
 sudo apt-get update
-sudo apt-get install -y curl libmariadb-dev gcc nodejs git
+sudo apt-get install -y curl gcc nodejs git
 ```
 
 ### 2. Клонування репозиторію
