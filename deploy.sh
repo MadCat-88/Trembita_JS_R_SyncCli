@@ -2,6 +2,7 @@
 set -e
 
 GREEN="\033[32m"
+RED="\033[31m"
 RESET="\033[0m"
 
 # Змінні для конфігурації
@@ -98,6 +99,6 @@ sudo systemctl daemon-reload
 sudo systemctl enable ${DAEMON_NAME}
 
 #Вивод повідомлення про завершення роботи
-echo -e "${GREEN}Встановлення завершено! Сервіс ${DAEMON_NAME} додано в автозапуск. Для запуску використвуйте команду ${RESET} sudo systemctl start ${DAEMON_NAME}"
-echo -e "${GREEN}Перед запуском, відредагуйте конфігураційний файл .env.local${RESET}"
-echo -e "${GREEN} Клієнт буде доступний за адресою ${RESET} http://server_ip:${CLIENT_PORT}/"
+echo -e "${GREEN}Встановлення завершено! Сервіс ${DAEMON_NAME} додано в автозапуск. Для запуску використвуйте команду ${RED}sudo systemctl start ${DAEMON_NAME}${RESET}"
+echo -e "${GREEN}Перед запуском, відредагуйте конфігураційний файл ${RED}.env.local${RESET}"
+echo -e "${GREEN} Клієнт буде доступний за адресою ${RED}http://server_ip:${CLIENT_PORT}/${RESET}"
