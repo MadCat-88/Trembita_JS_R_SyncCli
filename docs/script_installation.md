@@ -18,7 +18,7 @@
 ### Використання скрипта deploy.sh
 1. Завантажте скрипт:
 ```bash
-wget https://raw.githubusercontent.com/kshypachov/rest-sync-client-next-js-page-router/refs/heads/main/deploy.sh
+wget https://github.com/kshypachov/rest-sync-client-next-js-page-router/raw/refs/heads/master/deploy.sh
 ```
 2. Зробіть файл виконуваним:
 
