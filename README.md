@@ -53,13 +53,13 @@ rest-sync-client-next-js-page-router/
 |-- styles                                  # Директорія зі стилями
 |   |-- globals.css                         # Глобальні стилі
 |-- utils                                   # Директорія з утилітами
-    |-- axiosBackend.js                     # Налаштування axios для бекенду
-    |-- axiosFrontend.js                    # Налаштування axios для фронтенду
-    |-- getUxpHeaders.js                    # Функція для отримання заголовків UXP
-    |-- getUxpParams.js                     # Функція для отримання параметрів UXP
-    |-- logger.js                           # Логування
-    |-- middleware.js                       # Проміжні обробники
-    |-- saveAsic.js                         # Збереження ASIC
+|   |-- axiosBackend.js                     # Налаштування axios для бекенду
+|   |-- axiosFrontend.js                    # Налаштування axios для фронтенду
+|   |-- getUxpHeaders.js                    # Функція для отримання заголовків UXP
+|   |-- getUxpParams.js                     # Функція для отримання параметрів UXP
+|   |-- logger.js                           # Логування
+|   |-- middleware.js                       # Проміжні обробники
+|   |-- saveAsic.js                         # Збереження ASIC
 |-- .env.local                              # Конфігурація середовища
 |-- .gitignore                              # Ігнорування файлів Git
 |-- certificates.js                         # Скрипт для генерації сертифікатів
