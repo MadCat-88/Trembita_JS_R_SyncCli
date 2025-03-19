@@ -82,6 +82,4 @@ rest-sync-client-next-js-page-router/
 
 ## Ліцензія
 
-Вебкліент на базі REST з Next.js та React був розроблений [Roman Lakhnov](mailto:lakhnov.roman@gmail.com).
-
 Цей проєкт ліцензований під ліцензією GPL v3. Дивіться файл [LICENSE](LICENSE) для деталей.
