@@ -37,7 +37,7 @@ COPY . .
 RUN npm run build
 
 # Generate self-signed certificates.
-RUN npm run gen-srt
+RUN npm run gen-crt
 
 ################################################################################
 # Create a new stage to run the application with minimal runtime dependencies.

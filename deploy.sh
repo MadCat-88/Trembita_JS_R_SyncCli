@@ -68,7 +68,7 @@ EOL
 
 # Генерування сертифікатів для звʼязку з ШБО по https
 echo -e "${GREEN}Генерування сертифікатів https...${RESET}"
-npm run gen-srt
+npm run gen-crt
 
 # Збірка проекту
 echo -e "${GREEN}Збірка проекту...${RESET}"
