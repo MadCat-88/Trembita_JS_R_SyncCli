@@ -84,6 +84,7 @@ After=network.target
 [Service]
 User=$USER
 WorkingDirectory=$PWD
+ExecStartPre=/usr/bin/npm run build
 ExecStart=/usr/bin/npm start
 Restart=always
 RestartSec=3
