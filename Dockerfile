@@ -52,8 +52,6 @@ ENV NODE_ENV production
 # Create necessary directories and set permissions.
 RUN mkdir -p /usr/src/app/asic && chown -R node:node /usr/src/app/asic
 
-# Run the application as a non-root user.
-USER node
 
 # Copy package.json for runtime npm usage.
 COPY package.json .
@@ -62,6 +60,12 @@ COPY package.json .
 COPY --from=deps /usr/src/app/node_modules ./node_modules
 COPY --from=build /usr/src/app/.next ./.next
 COPY --from=build /usr/src/app/certs ./certs
+
+# Ensure correct ownership of certs
+RUN chown -R node:node ./certs
+
+# Run the application as a non-root user.
+USER node
 
 # Expose the port.
 EXPOSE 3001
