@@ -24,6 +24,9 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 # Create a stage for building the application.
 FROM deps as build
 
+# Install openssl package
+RUN apk add --no-cache openssl
+
 # Install devDependencies to support build.
 RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=package-lock.json,target=package-lock.json \
